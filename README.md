@@ -28,7 +28,7 @@ A quantum-kernel SVM that classifies chemical elements as metal or non-metal, wi
 
 ## Running the notebook
 
-Open `qkernel_bandwidth.ipynb` (for example in Google Colab) and run all cells; the first cell installs the packages.
+Open `qkernel_bandwidth.ipynb` and run all cells; the first cell installs the packages.
 
-- `FAST = True` runs a quick check (about 5 min); `FAST = False` runs the full study (about 1 h).
+- `FAST = True` runs a quick check ; `FAST = False` runs the full study.
 - `RUN_HARDWARE = False` (default) loads the saved hardware results from `results/`, so no IBM account is needed.
