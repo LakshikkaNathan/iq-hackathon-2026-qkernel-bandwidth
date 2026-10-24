@@ -58,6 +58,18 @@ Code: [`qkernel_bandwidth.ipynb`](qkernel_bandwidth.ipynb) (first cell installs 
 
 *Balanced test accuracy, mean over 10 splits (std 0.04–0.24).*
 
+![Two failure modes](figures/fig2_two_sided_failure.png)
+
+*Fig. 2. Left: variance of the off-diagonal kernel entries against λ; it collapses at small λ and falls with qubit count at large λ. Right: effective rank of the kernel matrix (divided by N); close to 0 for small λ (kernel nearly constant) and close to 1 for large λ (kernel nearly the identity).*
+
+![Concentration vs qubits](figures/fig3_concentration_vs_n.png)
+
+*Fig. 3. Kernel variance against the number of qubits. At λ = 1 and for the prototype it falls exponentially (concentration); at the tuned λ* it does not.*
+
+![Shot budget](figures/fig5_shots.png)
+
+*Fig. 5. 10 qubits: balanced accuracy against shots per kernel entry. At λ = 1 more shots do not help; at the tuned λ accuracy rises from 0.64 (32 shots) to 0.86 (8192 shots), against 0.89 for exact kernels.*
+
 - From 6 qubits up, the prototype and λ = 1 label every element a metal (0.50).
 - Choosing λ with 1000-shot kernels beats choosing it on the simulator and then running with shots, at every qubit count (by up to 10 points).
 
@@ -123,4 +135,14 @@ Small dataset (79 labelled elements, so results vary between splits); one small 
 
 ### References
 
-Havlíček *et al.*, *Nature* 567, 209 (2019) · Shaydulin & Wild, *PRA* 106, 042407 (2022) · Thanasilp *et al.*, *Nat. Commun.* 15, 5200 (2024) · Huang *et al.*, *Nat. Commun.* 12, 2631 (2021) · Meyer & Wallach, *J. Math. Phys.* 43, 4273 (2002) · Sithamparanathan *et al.*, IEEE QCE 2026 · `mendeleev` (L. M. Mentel)
+1. V. Havlíček, A. D. Córcoles, K. Temme, A. W. Harrow, A. Kandala, J. M. Chow and J. M. Gambetta, "Supervised learning with quantum-enhanced feature spaces," *Nature*, vol. 567, pp. 209–212, 2019.
+2. R. Shaydulin and S. M. Wild, "Importance of kernel bandwidth in quantum machine learning," *Physical Review A*, vol. 106, 042407, 2022.
+3. A. Canatar, E. Peters, C. Pehlevan, S. M. Wild and R. Shaydulin, "Bandwidth enables generalization in quantum kernel models," *Transactions on Machine Learning Research*, 2023.
+4. S. Thanasilp, S. Wang, M. Cerezo and Z. Holmes, "Exponential concentration in quantum kernel methods," *Nature Communications*, vol. 15, 5200, 2024.
+5. H.-Y. Huang, M. Broughton, M. Mohseni, R. Babbush, S. Boixo, H. Neven and J. R. McClean, "Power of data in quantum machine learning," *Nature Communications*, vol. 12, 2631, 2021.
+6. D. A. Meyer and N. R. Wallach, "Global entanglement in multiparticle systems," *Journal of Mathematical Physics*, vol. 43, pp. 4273–4278, 2002.
+7. L. Sithamparanathan and S. Kumar, "Spectral learning rates for bandwidth-tuned quantum kernels," *IEEE International Conference on Quantum Computing and Engineering (QCE)*, 2026.
+8. A. Javadi-Abhari *et al.*, "Quantum computing with Qiskit," arXiv:2405.08810, 2024.
+9. Qiskit Machine Learning, open-source library, https://github.com/qiskit-community/qiskit-machine-learning.
+10. L. M. Mentel, "mendeleev – a Python resource for properties of chemical elements, ions and isotopes," https://github.com/lmmentel/mendeleev.
+11. Interstate Quantum Hackathon 2026, QML training notebook (Parts 5 and 7), https://github.com/iq-hackathon/IQ-Hackathon-Fall-2026-Beginners.
