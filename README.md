@@ -2,15 +2,6 @@
 
 Interstate Quantum Hackathon 2026, QML track
 
-| | |
-|---|---|
-| Group name | Bandwidth Matters |
-| Member | Lakshikka Sithamparanathan (solo) |
-| Affiliation | Cleveland State University |
-| Department | Department of Computer Science |
-| Career level | PhD student |
-| Category | Champion |
-
 **Report:** [PDF](REPORT.pdf)
 
 A quantum-kernel SVM that classifies chemical elements as metal or non-metal, with a study of kernel bandwidth, exponential concentration, shot noise, feature maps and noise on IBM hardware (ibm_kingston).
@@ -20,7 +11,7 @@ A quantum-kernel SVM that classifies chemical elements as metal or non-metal, wi
 | path | content |
 |---|---|
 | `qkernel_bandwidth.ipynb` | all code, with outputs from the full run |
-| `REPORT.md`, `REPORT.pdf` | project report |
+| `REPORT.pdf` | project report |
 | `data/elements.csv` | element dataset (from the `mendeleev` database) |
 | `figures/` | all figures |
 | `results/` | result tables (CSV) and the ibm_kingston hardware results with job IDs (`hw_*`) |
