@@ -1,7 +1,5 @@
 # Metal / non-metal classification with quantum kernels
 
-Interstate Quantum Hackathon 2026, QML track
-
 **Report:** [PDF](REPORT.pdf)
 
 A quantum-kernel SVM that classifies chemical elements as metal or non-metal, with a study of kernel bandwidth, exponential concentration, shot noise, feature maps and noise on IBM hardware (ibm_kingston).
